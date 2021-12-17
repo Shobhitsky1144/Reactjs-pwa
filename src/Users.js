@@ -10,13 +10,13 @@ export default function Users() {
         response.json().then((result) => {
           console.warn(result);
           setData(result);
-          // localStorage.setItem("users", JSON.stringify(result));
+          localStorage.setItem("users", JSON.stringify(result));
         });
       })
       .catch((err) => {
         // setMode("offline");
-        // let collection = localStorage.getItem("users");
-        // setData(JSON.parse(collection));
+        let collection = localStorage.getItem("users");
+        setData(JSON.parse(collection));
       });
   }, []);
   return (

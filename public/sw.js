@@ -22,6 +22,8 @@ this.addEventListener("fetch", (event) => {
       if (result) {
         return result;
       }
+      let requestUrl = event.request.clone();
+      return fetch(requestUrl);
     })
   );
 });
