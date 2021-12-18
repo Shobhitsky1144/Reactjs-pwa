@@ -1,6 +1,7 @@
 introduction-------------->
 
 make two file for sevice worker
+
 sw.js in public folder
 swDev in public folder
 Register sw file
