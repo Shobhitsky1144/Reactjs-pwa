@@ -10,23 +10,17 @@ export default function Users() {
         response.json().then((result) => {
           console.warn(result);
           setData(result);
-          localStorage.setItem("users", JSON.stringify(result));
+      
         });
       })
       .catch((err) => {
-        // setMode("offline");
-        let collection = localStorage.getItem("users");
-        setData(JSON.parse(collection));
+       
       });
   }, []);
   return (
     <div>
       <div>
-        {/* {mode === "offline" ? (
-          <div class="alert alert-warning" role="alert">
-            you are in offline mode or some issue with connection
-          </div>
-        ) : null} */}
+       
       </div>
       <Table striped bordered hover>
         <thead>
